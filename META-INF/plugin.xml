@@ -18,8 +18,12 @@ Add change notes here.<br> <small>most HTML tags may be used</small>
   </change-notes>
 
 
+
+
   <depends>com.intellij.modules.lang</depends>
   <depends>com.intellij.tasks</depends>
+
+
 
   <extensions defaultExtensionNs="com.intellij">
     <tasks.repositoryType implementation="task.TFSRepositoryType"/>
