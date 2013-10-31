@@ -1,0 +1,32 @@
+<idea-plugin version="22">
+  <id>TFSTask integration</id>
+  <description>Supports integration with Microsoft Team Foundation Server issue tracking system.
+    To configure synchronization between an TFS system and IntelliJ IDEA choose type of server and enter credentials. IntelliJ IDEA will automatically synchronize the tasks.
+    To run the plugin, the TFS SDK must be Provided from your IDE. To do so, download the SDK from http://www.microsoft.com/en-us/download/details.aspx?id=22616.
+    After extraction copy the the redist/native directory and the redist/lib/com.microsoft.tfs.sdk-*.jar file into the lib/ directory of the IDE.
+
+  </description>
+
+
+  <name>IntelliJ task integration for Microsoft team foundation server</name>
+  <version>1.0</version>
+  <vendor email="david.biskupek@gmail.com"></vendor>
+  <change-notes>
+    <![CDATA[
+Add change notes here.<br> <small>most HTML tags may be used</small>
+]]>
+  </change-notes>
+
+
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.tasks</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <tasks.repositoryType implementation="task.TFSRepositoryType"/>
+
+  </extensions>
+
+
+  <idea-version since-build="109.105"/>
+
+</idea-plugin>
