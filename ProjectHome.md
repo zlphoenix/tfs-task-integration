@@ -1,0 +1,2 @@
+Supports integration with Microsoft Team Foundation Server issue tracking system.
+> To configure synchronization between an TFS system and IntelliJ IDEA choose type of server and enter credentials. IntelliJ IDEA will automatically synchronize the tasks.
